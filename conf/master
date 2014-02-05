@@ -326,9 +326,9 @@
 #
 # To use multiple backends list them in the order they are searched:
 #
-fileserver_backend:
-  - roots
-  - git
+#fileserver_backend:
+#  - roots
+#  - git
 #
 # By default, the Salt fileserver recurses fully into all defined environments
 # to attempt to find files. To limit this behavior so that the fileserver only
@@ -524,9 +524,3 @@ fileserver_backend:
 #win_gitrepos:
 #  - 'https://github.com/saltstack/salt-winrepo.git'
 
-gitfs_remotes:
-#  - git://github.com/saltstack/salt-states.git
-  - git://github.com/saltstack-formulas/vim-formula.git
-  - git://github.com/saltstack-formulas/openssh-formula.git
-  - git://github.com/saltstack-formulas/screen-formula.git
-  - git://github.com/saltstack-formulas/users-formula.git
