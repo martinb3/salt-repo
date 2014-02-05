@@ -1,0 +1,3 @@
+[submodule "formulas/vim"]
+	path = formulas/vim
+	url = https://github.com/saltstack-formulas/vim-formula

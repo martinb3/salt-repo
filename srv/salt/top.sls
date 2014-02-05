@@ -3,5 +3,5 @@ base:
   '*web':
     - httpd
   '*':
-    - edit.vim
-
+    - vim
+    - users
