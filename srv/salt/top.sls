@@ -5,3 +5,4 @@ base:
   '*':
     - vim
     - users
+    - openssh.config

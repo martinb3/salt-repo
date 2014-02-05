@@ -3,4 +3,5 @@ base:
   '*':
     - users
     - packages
+    - sshd_config
 
