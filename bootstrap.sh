@@ -1,7 +1,10 @@
 #!/bin/bash
+
+# try me with 'wget https://raw2.github.com/martinb3/salt-repo/master/bootstrap.sh'
+
 wget -O - http://bootstrap.saltstack.org | sudo sh
-apt-get install salt-master git
-yum install salt-master git
+apt-get -y install salt-master git
+yum -y install salt-master git
 git config --global user.name "Martin Smith"
 git config --global user.email "martin@mbs3.org"
 mkdir -p /srv
