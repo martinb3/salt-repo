@@ -1,15 +1,10 @@
 #!/bin/bash
 wget -O - http://bootstrap.saltstack.org | sudo sh
-service salt-minion stop
+apt-get install salt-master git
+yum install salt-master git
+git config --global user.name "Martin Smith"
+git config --global user.email "martin@mbs3.org"
 mkdir -p /srv
-rm /srv/salt; ln -s `pwd`/srv/salt /srv/salt
-rm /srv/pillar; ln -s `pwd`/srv/pillar /srv/pillar
-
-ln -s `pwd`/formulas/git/git `pwd`/srv/salt/git
-ln -s `pwd`/formulas/vim/vim `pwd`/srv/salt/vim
-ln -s `pwd`/formulas/users/users `pwd`/srv/salt/users
-ln -s `pwd`/formulas/openssh/openssh `pwd`/srv/salt/openssh
-ln -s `pwd`/formulas/screen/screen `pwd`/srv/salt/screen
-
-
-# salt-call --local state.highstate
+cd /srv && git clone git@github.com:martinb3/salt-repo.git
+ln -s /srv/salt-repo/salt /srv/salt
+ln -s /srv/salt-repo/pillar /srv/pillar
