@@ -1,4 +1,9 @@
 # File: /srv/pillar/users/init.sls:
 users:
-  martin: 2000
+  martin:
+    sudouser: True
+    sudo_rules:
+      - martin ALL=(ALL:ALL) ALL
+    groups:
+      - admin
 
