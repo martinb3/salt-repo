@@ -6,3 +6,5 @@ base:
     - vim
     - users
     - openssh.config
+    - git
+    - screen

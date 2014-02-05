@@ -7,3 +7,9 @@
 [submodule "formulas/openssh"]
 	path = formulas/openssh
 	url = https://github.com/saltstack-formulas/openssh-formula.git
+[submodule "formulas/git"]
+	path = formulas/git
+	url = https://github.com/saltstack-formulas/git-formula.git
+[submodule "formulas/screen"]
+	path = formulas/screen
+	url = https://github.com/saltstack-formulas/screen-formula.git
