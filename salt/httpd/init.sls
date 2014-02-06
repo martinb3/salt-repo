@@ -8,3 +8,10 @@ httpd:
   service:
     - running
     - name: {{ pillar['pkg']['httpd'] }}
+
+php:
+  pkg:
+    - installed
+    - name: {{ pillar['pkg']['php'] }}
+    - watch_in:
+      - service: httpd

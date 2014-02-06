@@ -3,6 +3,7 @@ pkg:
   {% if grains['os_family'] == 'Debian' %}
   httpd: apache2
   git: git-core
+  php: php5
   {% elif grains['os_family'] == 'RedHat' %}
   httpd: httpd
   git: git
