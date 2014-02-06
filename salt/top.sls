@@ -1,6 +1,6 @@
 # File: /srv/salt/top.sls:
 base:
-  '*web':
+  'web*':
     - httpd
   '*':
     - vim
