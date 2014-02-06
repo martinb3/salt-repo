@@ -13,3 +13,6 @@
 [submodule "formulas/screen"]
 	path = formulas/screen
 	url = https://github.com/saltstack-formulas/screen-formula.git
+[submodule "formulas/epel"]
+	path = formulas/epel
+	url = https://github.com/saltstack-formulas/epel-formula
